@@ -6,27 +6,5 @@ HTML_sitepw is a html script which you can add to your website, to make it passw
 # how to set up
 1. add following code to your website: 
 ```ruby
-<!DOCTYPE html>
-<html>
-<body>
-  <pre id="file-content"></pre>
-  <script>
-  
-    var skeypass1secret = "PASSWORD HERE";
-  
-    const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
-    const username = "Heimatbrot";
-    const repo = "HTML_sitepw";
-    const filepath = "main.html";
-
-    fetch(url.replace("{username}", username).replace("{repo}", repo).replace("{filepath}", filepath))
-      .then(response => response.json())
-      .then(data => {
-        const decodedContent = atob(data.content); // decode base64-encoded content
-        document.getElementById("file-content").textContent = decodedContent;
-      })
-      .catch(error => console.error(error));
-  </script>
-</body>
-</html>
+NOT FINISHED YET
 ```

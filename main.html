@@ -2,6 +2,7 @@
 
 var password;
 var cacheExpiration = 12 * 60 * 60 * 1000; // 12 hours in milliseconds
+var passwordtologin = "ENTER PASSWORD HERE"
 
 // Check if password is stored in local storage
 if (localStorage.getItem("password") && localStorage.getItem("timestamp")) {
@@ -18,7 +19,7 @@ if (localStorage.getItem("password") && localStorage.getItem("timestamp")) {
   password = prompt('Ohne Passwort kommst du hier nicht weiter!\n','');
 }
 
-if (password == skeypass1secret) {
+if (password == passwordtologin) {
   localStorage.setItem("password", password);
   localStorage.setItem("timestamp", new Date().getTime());
 } else {

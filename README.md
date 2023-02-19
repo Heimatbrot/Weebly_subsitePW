@@ -15,9 +15,9 @@ HTML_sitepw is a html script which you can add to your website, to make it passw
     var skeypass1secret = "PASSWORD HERE";
   
     const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
-    const username = "your-github-username";
-    const repo = "your-github-repo";
-    const filepath = "path/to/your/file.html";
+    const username = "Heimatbrot";
+    const repo = "HTML_sitepw";
+    const filepath = "main.html";
 
     fetch(url.replace("{username}", username).replace("{repo}", repo).replace("{filepath}", filepath))
       .then(response => response.json())

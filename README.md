@@ -5,26 +5,26 @@ HTML_sitepw is a html script which you can add to your website, to make it passw
 # how to set up
 1. add following code to your website: 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>GitHub API Example</title>
-</head>
-<body>
-  <pre id="file-content"></pre>
-  <script>
-    const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
-    const username = "your-github-username";
-    const repo = "your-github-repo";
-    const filepath = "path/to/your/file.html";
-
-    fetch(url.replace("{username}", username).replace("{repo}", repo).replace("{filepath}", filepath))
-      .then(response => response.json())
-      .then(data => {
-        const decodedContent = atob(data.content); // decode base64-encoded content
-        document.getElementById("file-content").textContent = decodedContent;
-      })
-      .catch(error => console.error(error));
-  </script>
-</body>
-</html>
+#<!DOCTYPE html>
+#<html>
+#<head>
+#  <title>GitHub API Example</title>
+#</head>
+#<body>
+#  <pre id="file-content"></pre>
+#  <script>
+#    const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
+#    const username = "your-github-username";
+#    const repo = "your-github-repo";
+#    const filepath = "path/to/your/file.html";
+#
+#    fetch(url.replace("{username}", username).replace("{repo}", repo).replace("{filepath}", filepath))
+#      .then(response => response.json())
+#      .then(data => {
+#        const decodedContent = atob(data.content); // decode base64-encoded content
+#        document.getElementById("file-content").textContent = decodedContent;
+#      })
+#      .catch(error => console.error(error));
+#  </script>
+#</body>
+#</html>

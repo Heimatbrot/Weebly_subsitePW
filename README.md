@@ -9,11 +9,11 @@ HTML_sitepw is a html script which you can add to your website, to make it passw
 <!DOCTYPE html>
 <html>
 <body>
-
-  var skeypass1secret = "PASSWORD HERE";
-  
   <pre id="file-content"></pre>
   <script>
+  
+    var skeypass1secret = "PASSWORD HERE";
+  
     const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
     const username = "your-github-username";
     const repo = "your-github-repo";

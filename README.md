@@ -8,10 +8,10 @@ HTML_sitepw is a html script which you can add to your website, to make it passw
 ```ruby
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GitHub API Example</title>
-</head>
 <body>
+
+  var skeypass1secret = "PASSWORD HERE";
+  
   <pre id="file-content"></pre>
   <script>
     const url = "https://api.github.com/repos/{username}/{repo}/contents/{filepath}";
